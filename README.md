@@ -1,4 +1,4 @@
-# eagle-eye-analytics
+# Eagle Eye Analytics
 
   This application will analytically determine the popularity of various booths in a convention setting using analytics automatically populated through a program that analyzes live footage from a security camera.   
   It will also track individuals’ movements using facial recognition and give a summary of where each individual spent his or her time at the convention.

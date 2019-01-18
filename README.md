@@ -17,7 +17,7 @@ Everyone: Mapping locations, Cameras
 * Allow Multiples video feed to trigger Algorithms and populate database by 31 january year 2019.  
 
 
-
+![trello](http://magaimg.net/img/72hw.png)
 
 
 by the JUS Software

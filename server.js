@@ -3,6 +3,7 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const API = require('./arloAPI')
+const importToS3 = require('./s3import')
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -18,6 +19,9 @@ app.get('/data', (req, resp) => {
   .then(res=>{
     API.getVideoClip(res)
     .then(imgURL=>{
+      imgURL.forEach((url,i)=>{
+        importToS3(url, i)
+      })
       resp.send(imgURL)
     })
   })

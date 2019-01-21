@@ -20,7 +20,9 @@ app.get('/data', (req, resp) => {
     API.getVideoClip(res)
     .then(imgURL=>{
       imgURL.forEach((url,i)=>{
-        importToS3(url, i)
+        if(i<=3){
+          importToS3(url, i+1)
+        }
       })
       resp.send(imgURL)
     })

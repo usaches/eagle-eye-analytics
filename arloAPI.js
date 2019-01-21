@@ -30,11 +30,12 @@ const API = {
         },
         data: {
           dateFrom: "20190118",
-          dateTo: "20190120"
+          dateTo: "20190121"
         }
   
       })
       .then(res=>{
+        console.log(res)
         const img = res.data.data.map(d=>{
           return(d.presignedContentUrl)
         })

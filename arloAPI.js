@@ -35,7 +35,6 @@ const API = {
   
       })
       .then(res=>{
-        console.log(res)
         const img = res.data.data.map(d=>{
           return(d.presignedContentUrl)
         })

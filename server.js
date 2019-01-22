@@ -3,7 +3,8 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const API = require('./arloAPI')
-const importToS3 = require('./s3import')
+const importToS3 = require('./AWS/s3import')
+const faceDetect = require('./AWS/rekognition')
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -22,6 +23,11 @@ app.get('/data', (req, resp) => {
       imgURL.forEach((url,i)=>{
         if(i<=3){
           importToS3(url, i+1)
+          .then(res=>{
+            if(res === 'done'){
+              faceDetect(i+1)
+            }
+          })
         }
       })
       resp.send(imgURL)

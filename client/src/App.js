@@ -7,7 +7,7 @@ class App extends Component {
   state = {
     img: []
   }
-
+//loads content to page
   componentDidMount() {
     Axios.get('/data')
       .then(image => {

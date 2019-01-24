@@ -19,7 +19,7 @@ class App extends Component {
         }
       })
   }
-
+//renders images to page
   render() {
     return (
       <div>

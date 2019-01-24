@@ -25,7 +25,9 @@ class App extends Component {
     return (
       <div>
         {this.state.img.map((image,i) => {
-          return image ? <Img key={i+1} src={image} num={i+1}/> : null
+          if(i <=3) {
+            return image ? <Img key={i+1} src={image} num={i+1}/> : null
+          }else return null 
         })}
       </div>
     );

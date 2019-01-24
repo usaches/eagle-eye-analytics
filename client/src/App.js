@@ -24,6 +24,7 @@ class App extends Component {
     return (
       <div>
         {this.state.img.map((image,i) => {
+          //only renders 4 videos
           if(i <=3) {
             return image ? <Img key={i+1} src={image} num={i+1}/> : null
           }else return null 

@@ -47,6 +47,7 @@ const API = {
       })
     })
   },
+  //finds the devices we have
   getDevices: (token) => {
     return new Promise((resolve,reject)=>{
       axios({

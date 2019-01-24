@@ -2,6 +2,7 @@ require('dotenv').config()
 const axios = require('axios');
 
 const API = {
+  //signs into arlo
   signIn: () => {
     return new Promise((resolve,reject)=>{
       axios({

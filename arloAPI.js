@@ -21,6 +21,7 @@ const API = {
         })
     })
   },
+  //gets video clips
   getVideoClip: (token) => {
     return new Promise((resolve,reject)=>{
       axios({

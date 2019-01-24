@@ -9,6 +9,7 @@ const faceDetect = (num) => {
         Bucket: 'engleeyebucket',
         Name: `video${num}.mp4`,
       }
+      //data from bucket
     },
     NotificationChannel: {
       RoleArn: 'arn:aws:iam::421823961545:role/RekognitionServiceRole',

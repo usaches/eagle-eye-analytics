@@ -1,7 +1,7 @@
 const AWS = require('./config')
 const jobDone = require('./SQS')
 const rekognition = new AWS.Rekognition()
-
+// starts face detect
 const faceDetect = (num) => {
   const params = {
     Video: {

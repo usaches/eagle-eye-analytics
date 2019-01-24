@@ -1,5 +1,7 @@
 import React from 'react'
 
+//image rendering componnet
+
 function Img(props){
     return(
         <div>

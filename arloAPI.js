@@ -30,7 +30,7 @@ const API = {
         },
         data: {
           dateFrom: "20190118",
-          dateTo: "20190118"
+          dateTo: "20190121"
         }
   
       })

@@ -19,11 +19,11 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
+    "aws-sdk": "^2.391.0",
     "axios": "^0.18.0",
-    "cors": "^2.8.5",
     "dotenv": "^6.2.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "yarn": "^1.13.0"
+    "s3-upload-stream": "^1.0.7"
   }
 }

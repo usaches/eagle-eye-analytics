@@ -3,7 +3,7 @@ const stream = require('stream')
 const AWS = require('./config')
 
 const s3 = new AWS.S3()
-
+//stream data starting
 function uploadFromStream(s3, num) {
   var pass = new stream.PassThrough();
   var params = { Bucket: 'engleeyebucket', Key: `video${num}.mp4`, Body: pass };
@@ -14,7 +14,7 @@ function uploadFromStream(s3, num) {
 
   return pass;
 }
-
+//starting import
 function importToS3(url, num) {
   return new Promise((resolve, reject) => {
     axios({

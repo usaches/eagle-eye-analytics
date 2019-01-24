@@ -2,6 +2,7 @@ require('dotenv').config()
 const axios = require('axios');
 
 const API = {
+  //signs into arlo
   signIn: () => {
     return new Promise((resolve,reject)=>{
       axios({
@@ -20,6 +21,7 @@ const API = {
         })
     })
   },
+  //gets video clips
   getVideoClip: (token) => {
     return new Promise((resolve,reject)=>{
       axios({
@@ -45,6 +47,7 @@ const API = {
       })
     })
   },
+  //finds the devices we have
   getDevices: (token) => {
     return new Promise((resolve,reject)=>{
       axios({

@@ -1,7 +1,7 @@
 const AWS = require('./config')
 const jobDone = require('./SQS')
 const rekognition = new AWS.Rekognition()
-
+// starts face detect
 const faceDetect = (num) => {
   const params = {
     Video: {
@@ -9,6 +9,7 @@ const faceDetect = (num) => {
         Bucket: 'engleeyebucket',
         Name: `video${num}.mp4`,
       }
+      //data from bucket
     },
     NotificationChannel: {
       RoleArn: 'arn:aws:iam::421823961545:role/RekognitionServiceRole',

@@ -25,6 +25,7 @@
     "express": "^4.16.3",
     "if-env": "^1.0.4",
     "react-materialize": "^2.6.0",
+    "request": "^2.88.0",
     "s3-upload-stream": "^1.0.7"
   }
 }
